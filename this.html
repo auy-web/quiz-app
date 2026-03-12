@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProQuiz | Interactive Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <div id="setup-screen">
+            <h1>Ready for a Challenge?</h1>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <div id="question-container" class="hide">
+            <div class="quiz-header">
+                <span id="progress">Question 1 of 5</span>
+                <span id="timer">Time: 15s</span>
+            </div>
+            <h2 id="question-text">Question Text goes here</h2>
+            <div id="answer-buttons" class="btn-grid">
+                </div>
+            <div class="controls">
+                <button id="next-btn" class="hide">Next Question</button>
+            </div>
+        </div>
+
+        <div id="result-screen" class="hide">
+            <h2>Quiz Completed!</h2>
+            <p id="score-text"></p>
+            <button onclick="location.reload()">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
